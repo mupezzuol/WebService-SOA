@@ -13,6 +13,7 @@
 <h3><b>Aplicação Servidora:</b></h3>   
 <ul TYPE="circle">
 <li>Desenvolvida através do Eclipse + DAO + MVC;</li>
+<li>JDBC + Postgres;</li>
 <li>Criação de pacote JAR;</li>
 <li>Publicação dos objetos.</li>
 </ul>
