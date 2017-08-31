@@ -1,0 +1,25 @@
+create table conta(
+    idconta serial not null,
+    nome varchar(50) not null,
+    saldo numeric(10,1),
+    senha varchar(6) not null,
+    constraint fk_conta primary key (idconta)
+)	
+
+insert into conta(nome,saldo,senha) values('Murillo',100,'1234');
+insert into conta(nome,saldo,senha) values('Luiz',500,'2222');
+insert into conta(nome,saldo,senha) values('Carlos',235,'66666');
+
+-- INSERÇÃO PARA ABERTURA DE CONTA
+insert into conta(nome,saldo,senha) values('ContaNova',0,'66666');
+
+--UPDATE PARA DEPOSITO E SAQUE
+update conta set saldo = saldo + 50 where idconta = 9 and senha = '66666'
+
+--CONSULTAS
+select * from conta;
+
+http://localhost:8080/WSBancoMu/services/ServicoConta?wsdl
+
+
+
